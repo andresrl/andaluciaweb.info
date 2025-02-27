@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.1.0",
+    "eslint": "^8.41.0",
+    "eslint-plugin-vue": "^9.14.1",
+    "nuxt": "^3.9.0",
+    "sass": "^1.69.7",
+    "vue": "^3.4.3",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.21.1",
+    "animate.css": "^4.1.1",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "sass-loader": "^13.3.3",
+    "swiper": "^11.0.5"
+  },
+  "type": "commonjs",
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
+  }
+}
