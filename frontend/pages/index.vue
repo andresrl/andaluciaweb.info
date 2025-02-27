@@ -10,13 +10,13 @@
       :autoplay="{ delay: DELAY_SLIDER_EMOCIONES, disableOnInteraction: false }"
       :loop="true"
     >
-      <!-- <SwiperSlide v-for="(ficha, index) in fichas" :key="`ficha-${index}`">
+      <SwiperSlide v-for="(ficha, index) in fichas" :key="`ficha-${index}`">
         <SlideEmocion
           :ficha="ficha"
           :current-slide-index="currentSlideIndex"
           :index="index"
         />
-      </SwiperSlide> -->
+      </SwiperSlide>
 
       <SwiperSlide key="tiemporeal-1">
         <SlideTiempoReal
@@ -26,21 +26,21 @@
         />
       </SwiperSlide>
 
-      <!-- <SwiperSlide key="tiemporeal-2">
+      <SwiperSlide key="tiemporeal-2">
         <SlideTiempoRealSegunda
           :tiempo-real="tiempoReal"
           :current-slide-index="currentSlideIndex"
           :index="fichas.length + 1"
         />
-      </SwiperSlide> -->
+      </SwiperSlide>
 
-      <!-- <SwiperSlide v-for="(post, index) in posts" :key="`post-${index}`">
+      <SwiperSlide v-for="(post, index) in posts" :key="`post-${index}`">
         <SlideCompanyPost
           :empresa="post"
           :index="fichas.length + 2 + index"
           :current-slide-index="currentSlideIndex"
         />
-      </SwiperSlide> -->
+      </SwiperSlide>
     </Swiper>
   </div>
 </template>
@@ -208,7 +208,7 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
 }
 </style>
