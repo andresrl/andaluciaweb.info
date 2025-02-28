@@ -30,6 +30,13 @@
               <div class="texto">Visitors</div>
             </div>
             <div
+            class="info-izquierda"
+            :class="{ 'animate__animated animate__slideInUp': isAnimated }"
+          >
+            <div class="numero">{{ emocionPredominanteNumero }}%</div>
+            <div class="texto">{{ emocionPredominanteTexto }}</div>
+          </div>
+            <div
               class="info-izquierda"
               :class="{ 'animate__animated animate__slideInUp': isAnimated }"
             >
@@ -37,36 +44,27 @@
               <div class="texto">Average<br />age</div>
             </div>
           </div>
-
-          <div
-            class="info-izquierda"
-            :class="{ 'animate__animated animate__slideInUp': isAnimated }"
-          >
-            <div class="numero">{{ emocionPredominanteNumero }}%</div>
-            <div class="texto">{{ emocionPredominanteTexto }}</div>
-          </div>
-
-          <div style="display: flex; justify-content: space-between">
-            <div
-              class="info-izquierda"
-              :class="{ 'animate__animated animate__slideInUp': isAnimated }"
-            >
-              <div class="numero">{{ tiempoReal?.hombres && tiempoReal?.visitantes ? Math.floor(tiempoReal.hombres/tiempoReal.visitantes * 100) : 0 }}%</div>
-              <div class="texto">Men</div>
-            </div>
-            <div
-              class="info-izquierda"
-              :class="{ 'animate__animated animate__slideInUp': isAnimated }"
-            >
-              <div class="numero">{{ tiempoReal?.mujeres && tiempoReal?.visitantes ? Math.floor(tiempoReal.mujeres/tiempoReal.visitantes * 100) : 0 }}%</div>
-              <div class="texto">Women</div>
+          <div style="margin-left: 15%; margin-top: 2em;width: 70%; text-align: center;">
+            <div style="display: flex; justify-content: space-between">
+              <div
+                class="info-izquierda"
+                :class="{ 'animate__animated animate__slideInUp': isAnimated }"
+              >
+                <div class="numero">{{ tiempoReal?.hombres && tiempoReal?.visitantes ? Math.floor(tiempoReal.hombres/tiempoReal.visitantes * 100) : 0 }}%</div>
+                <div class="texto">Men</div>
+              </div>
+              <div
+                class="info-izquierda"
+                :class="{ 'animate__animated animate__slideInUp': isAnimated }"
+              >
+                <div class="numero">{{ tiempoReal?.mujeres && tiempoReal?.visitantes ? Math.floor(tiempoReal.mujeres/tiempoReal.visitantes * 100) : 0 }}%</div>
+                <div class="texto">Women</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <footer>
-        <img src="/img/footer.png" alt="Footer" />
-      </footer>
+      <footer><img src="/img/footer_4k_horizontal.png" alt="Footer" /></footer>
     </template>
   </div>
 </template>
@@ -133,15 +131,22 @@ import { computed, onMounted, watch } from "vue";
 
   header {
     text-align: center;
-    width: 40%;
+    width: 100%;
     margin: 3em auto 0 auto;
+    img {
+      width: 15%;
+    }
   }
 
+
   footer {
-    background: $verde-claro;
-    padding: 4em;
-    text-align: center;
+  text-align: center;
+  width: 100%;
+  line-height: 0;
+  img {
+    width: 100%;
   }
+}
 
   * {
     color: $verde;
@@ -158,7 +163,7 @@ import { computed, onMounted, watch } from "vue";
 
   h1 {
     text-align: center;
-    font-size: 6em;
+    font-size: 3em;
     color: $verde;
     font-family: "Barlow-ExtraLightItalic", sans-serif;
     margin: 1em auto 0 auto;
@@ -167,7 +172,7 @@ import { computed, onMounted, watch } from "vue";
   h2 {
     text-align: center;
     color: white;
-    font-size: 2.5em;
+    font-size: 1.55em;
     font-family: "Barlow-ExtraLightItalic", sans-serif;
     margin: 0;
   }
@@ -184,9 +189,9 @@ import { computed, onMounted, watch } from "vue";
   .content-derecha {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
-    width: 80%;
+    width: 60%;
   }
 
   .content-derecha {
@@ -194,7 +199,7 @@ import { computed, onMounted, watch } from "vue";
   }
 
   .info-izquierda {
-    padding: 6em;
+    padding: 4em;
     position: relative;
 
     &::before {
@@ -212,7 +217,7 @@ import { computed, onMounted, watch } from "vue";
     }
 
     .numero {
-      font-size: 8em;
+      font-size: 5em;
       color: white;
       width: 2em;
       text-align: center;
@@ -220,10 +225,10 @@ import { computed, onMounted, watch } from "vue";
     }
 
     .texto {
-      font-size: 2.2em;
+      font-size: 1.6em;
       font-family: Barlow-SemiBold;
       line-height: 1em;
-      margin-top: -1em;
+      margin-top: -.5em;
       text-transform: uppercase;
     }
   }
