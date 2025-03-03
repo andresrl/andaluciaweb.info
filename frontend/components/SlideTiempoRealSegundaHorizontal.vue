@@ -50,14 +50,14 @@
                 class="info-izquierda"
                 :class="{ 'animate__animated animate__slideInUp': isAnimated }"
               >
-                <div class="numero">{{ tiempoReal?.hombres && tiempoReal?.visitantes ? Math.floor(tiempoReal.hombres/tiempoReal.visitantes * 100) : 0 }}%</div>
+                <div class="numero">{{ tiempoReal?.hombres && tiempoReal?.visitantes ? Math.floor(tiempoReal.hombres/tiempoReal.visitantes * 1) : 0 }}%</div>
                 <div class="texto">Men</div>
               </div>
               <div
                 class="info-izquierda"
                 :class="{ 'animate__animated animate__slideInUp': isAnimated }"
               >
-                <div class="numero">{{ tiempoReal?.mujeres && tiempoReal?.visitantes ? Math.floor(tiempoReal.mujeres/tiempoReal.visitantes * 100) : 0 }}%</div>
+                <div class="numero">{{ tiempoReal?.mujeres && tiempoReal?.visitantes ? Math.floor(tiempoReal.mujeres/tiempoReal.visitantes * 1) : 0 }}%</div>
                 <div class="texto">Women</div>
               </div>
             </div>
@@ -183,6 +183,7 @@ import { computed, onMounted, watch } from "vue";
     text-align: center;
     margin: auto;
     width: 100%;
+    scale: 0.85;
   }
 
   .content-izquierda,

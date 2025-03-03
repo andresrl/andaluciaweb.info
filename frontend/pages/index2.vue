@@ -190,9 +190,14 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" scoped>
+body {
+  background-color: #000;
+}
 .wrapper {
   width: 100%;
   height: 100vh;
   background-color: #000;
+  
 }
+
 </style>

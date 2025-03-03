@@ -147,6 +147,7 @@ h2 {
   text-align: center;
   margin: auto;
   width: 100%;
+  scale: 0.85;
 }
 
 .content-izquierda,

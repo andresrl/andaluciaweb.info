@@ -124,6 +124,7 @@ h2 {
   text-align: center;
   margin: auto;
   gap: 6em;
+  scale: 0.85;
 }
 
 .content-izquierda,
