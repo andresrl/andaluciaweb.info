@@ -11,7 +11,7 @@
       :loop="true"
     >
       <SwiperSlide key="tiemporeal-1">
-        <SlideTiempoReal
+        <SlideTiempoRealHorizontal
           :current-slide-index="currentSlideIndex"
           :index="fichas.length"
           :tiempo-real="tiempoReal"
@@ -19,7 +19,7 @@
       </SwiperSlide>
 
       <SwiperSlide key="tiemporeal-2">
-        <SlideTiempoRealSegunda
+        <SlideTiempoRealSegundaHorizontal
           :tiempo-real="tiempoReal"
           :current-slide-index="currentSlideIndex"
           :index="fichas.length + 1"

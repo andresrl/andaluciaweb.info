@@ -34,13 +34,13 @@
         />
       </SwiperSlide>
 
-      <SwiperSlide v-for="(post, index) in posts" :key="`post-${index}`">
+      <!-- <SwiperSlide v-for="(post, index) in posts" :key="`post-${index}`">
         <SlideCompanyPost
           :empresa="post"
           :index="fichas.length + 2 + index"
           :current-slide-index="currentSlideIndex"
         />
-      </SwiperSlide>
+      </SwiperSlide> -->
     </Swiper>
   </div>
 </template>
