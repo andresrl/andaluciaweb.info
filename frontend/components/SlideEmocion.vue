@@ -164,6 +164,7 @@ footer {
   position: relative;
   display: flex;
   margin-top: 10em;
+  scale: 0.85;
 
   .tarta-img {
     margin: auto;

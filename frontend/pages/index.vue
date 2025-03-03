@@ -213,6 +213,5 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  scale: 0.95;
 }
 </style>
