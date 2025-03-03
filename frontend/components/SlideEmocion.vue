@@ -164,7 +164,7 @@ footer {
   position: relative;
   display: flex;
   margin-top: 10em;
-  scale: 0.85;
+  scale: 0.75;
 
   .tarta-img {
     margin: auto;
@@ -215,7 +215,7 @@ footer {
   }
 
   .tarta-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     font-family: Barlow-SemiBold;
     text-transform: uppercase;
